@@ -1,150 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <script src="https://kit.fontawesome.com/a169534b06.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/a169534b06.js"
+      crossorigin="anonymous"
+    ></script>
     <!--  Font Roboto Condensed  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <!--   Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="grid.css">
-    <script src="./javascript.js"></script>
-</head>
-<body>
-   <div class="container">
-       <nav class="nav-main" id="home">
-        
-           <div>
-            <a href="#home"><img src="https://i.ibb.co/Mh2q2P6/logojm.png" alt="Logo Jesús Mares" class="nav-brand"></a>
-           </div>
-            <div>
-                <ul class="nav-menu hide" id="menu">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    
-                </ul>
-                <a onclick="showMenu()" href="#"><i class="fas fa-bars"></i></a>
-            </div>
-       </nav>
-       <hr>
-       <!-- Overlay -->
-       <header class="main-section text-color-white">
-        <div class="overlay"></div>
-           <h2 class="p-relative space-top-bottom">Portfolio Jesús Mares</h2>
-            <p class="p-relative text-center space-top-bottom margin-auto">I'm Jesús Mares, a Web Developer
-            </p>
-            <a href="#" class="text-color-white p-relative btn">Read More <i class="fas fa-angle-double-right"></i></a>
-       </header>
-       <!-- About me section-->
-       <div class="about-me-cards" id="about">
-           <div class="row">
-               <div class="col-md-6 col-sm-12">
-                   <div class="margin-auto">
-                    <div class="profile-picture"></div>
-                   </div>
-                
-               </div>
-            
-               <div class="col-md-6 col-sm-12">
-                <div class="margin-auto" >
-                    <h3 class="text-center">About me</h3>
-                    <p>I am a freelancer based in the Mexico City and i have been building  websites for 2 years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster..
-                    </p>
-                    <a href="#" class="text-color-white p-relative btn">Download CV </a>
-                </div>
-               </div>
-            
-           </div>
-               
-        </div>
-        <hr>
-        <!-- Generals-->
-       <div class="generals-cards">
-        <div class="row">
-            <div class="col-md-6">
-             <p class="space-top-bottom">
-                Name: Jesús Mares
-            </p>
-            <p class="space-top-bottom">
-                Age: 38
-            </p>
-            </div>
-         
-            <div class="col-md-6">
-                <p class="space-top-bottom">
-                    Email: jesusmares82@gmail.com
-               </p>
-               <p class="space-top-bottom">
-                From: Mexico City
-               </p>
-               </div>
-         
-        </div>
-            
-       </div>
-       <hr>
-       <!-- Portfolio-->
-       <h3 class="space-top-bottom text-center">Portfolio</h3>
-       <div class="portfolio-cards text-center align-items-center" id="portfolio">
-        
-         <div class="row">
-            
-            <div class="col-md-3 col-sm-6">
-                 <img src="./img/work1.jpeg" alt="Work 1">
-                 <h4>Alebrijes Miriam Valois</h4>
-                 <span class="border-anio">Dic 2020</span>
-                 <p class="space-top-bottom">Miriam Valois is an artist </p>
-           </div>
-           <div class="col-md-3 col-sm-6">
-                 <img src="./img/work2.jpg" alt="Work 2">
-                 <h4>Alebrijes Miriam Valois</h4>
-                 <span class="border-anio">Dic 2020</span>
-                <p class="space-top-bottom">Miriam Valois is an artist </p>
-          </div>
-          <div class="col-md-3 col-sm-6">
-                 <img src="./img/work3.jpeg" alt="Work 3">
-                 <h4>Alebrijes Miriam Valois</h4>
-                 <span class="border-anio">Dic 2020</span>
-                 <p class="space-top-bottom">Miriam Valois is an artist </p>
-          </div>
-          <div class="col-md-3 col-sm-6">
-                 <img src="./img/work4.jpeg" alt="Work 4">
-                 <h4>Alebrijes Miriam Valois</h4>
-                 <span class="border-anio">Dic 2020</span>
-                 <p class="space-top-bottom">Miriam Valois is an artist </p>
-         </div>
-         </div>
-         
-       </div>
-       <hr>
-       <!-- Footer-->
-       <div class="footer">
-           <h4 class="text-center space-top-bottom">Copyright ©2020 All rights reserved. </h4>
-           <div class="social">
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-           </div>
-       </div>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="grid.css" />
+  </head>
+  <body>
+    <div class="arrow">
+      <a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a>
     </div>
-</body>
+    <div class="container">
+      <nav class="nav-main" id="home">
+        <div>
+          <a href="#home">
+            <img
+              src="https://i.ibb.co/Mh2q2P6/logojm.png"
+              alt="Logo Jesús Mares"
+              class="nav-brand"
+            />
+          </a>
+        </div>
+        <div>
+          <ul class="nav-menu">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr />
+      <!-- Overlay -->
+      <header class="main-section text-color-white">
+        <div class="overlay"></div>
+        <h1 class="p-relative space-top-bottom">Portfolio Jesús <span>Mares</span></h1>
+        <p class="p-relative text-center space-top-bottom margin-auto">
+          I'm Jesús Mares, a Web Developer
+        </p>
+        <a href="#" class="text-color-white p-relative btn"
+          >Read More <i class="fas fa-angle-double-right"></i>
+        </a>
+      </header>
+      <!-- About me section-->
+      <section class="about-me-cards" id="about">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="margin-auto">
+              <div class="profile-picture"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="margin-auto">
+              <h3 class="text-center"><span>About</span> me</h3>
+              <p>
+                I am a freelancer based in the Mexico City and i have been
+                building websites for 2 years, which comply with the latest
+                design trends. I help convert a vision and an idea into
+                meaningful and useful products. Having a sharp eye for product
+                evolution helps me prioritize tasks, iterate fast and deliver
+                faster.
+              </p>
+              <a href="#" class="text-color-white p-relative btn"
+                >Downloand CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Generals-->
+      <section class="generals-cards">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="space-top-bottom">Name: Jesús Mares</p>
+            <p class="space-top-bottom">Age: 38</p>
+          </div>
+          <div class="col-md-6">
+            <p class="space-top-bottom">Degree: Computer systems engineer</p>
+            <p class="space-top-bottom">
+              Education: Universidad Nacional Autónoma de México
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="container">
+          <h2 class="margin-left">Port<span>folio</span></h2>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./img/work.jpeg" alt="First work"/>
+            </div>
+            <div class="col-md-8">
+              <h4 class="space-bottom">My first work</h4>
+              <span class="tag primary-tag"> Dic, 2020 </span>
+              <p class="space-top">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                debitis voluptatibus ratione dolorum odio cum quibusdam impedit
+                pariatur adipisci quaerat?.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./img/work2.jpg" alt="Second work"/>
+            </div>
+            <div class="col-md-8">
+              <h4 class="space-bottom">My second work</h4>
+              <span class="tag primary-tag space-top"> Dic, 2020</span>
+              <p class="space-top">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                debitis voluptatibus ratione dolorum odio cum quibusdam impedit
+                pariatur adipisci quaerat?
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./img/work3.jpeg" alt="Third work"/>
+            </div>
+            <div class="col-md-8">
+              <h4 class="space-bottom">My third work</h4>
+              <span class="tag primary-tag space-top"> Dic, 2020 </span>
+              <p class="space-top">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                debitis voluptatibus ratione dolorum odio cum quibusdam impedit
+                pariatur adipisci quaerat?
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./img/work4.jpeg" alt="Fourth work"/>
+            </div>
+            <div class="col-md-8">
+              <h4 class="space-bottom">My fourth work</h4>
+              <span class="tag primary-tag space-top-tag"> Dic, 2020 </span>
+              <p class="space-top">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                debitis voluptatibus ratione dolorum odio cum quibusdam impedit
+                pariatur adipisci quaerat?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio -->
+      <hr/>
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="contact container">
+          <div><h2 class="section-title text-center"><span>Con</span>tact</h2></div>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="icon">
+                <img class="font-size" src="./img/phone-alt-solid.svg"/>
+              </div>
+              <div class="contact-info">
+                <h2>Phone</h2>
+                <h3>+52 55 4805 6471</h3>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon"><img src="./img/email.svg"/></div>
+              <div class="contact-info">
+                <h2>Email</h2>
+                <h3>jesusmares82@gmail.com</h3>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon"><img src="./img/addres.svg"/></div>
+              <div class="contact-info">
+                <h2>Address</h2>
+                <h3>México, CDMX, Tlalpan</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+      <hr/>
+      <!-- Footer-->
+      <footer class="footer">
+        <h4 class="text-center space-top-bottom">
+          Copyright ©2020 All rights reserved.
+        </h4>
+        <div class="social">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </footer>
+      <!-- End Footer Section -->
+    </div>
+  </body>
 </html>
