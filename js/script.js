@@ -22,7 +22,7 @@ const maquinaEscribir = (text, tiempo = 10, etiqueta = "") => {
 
 maquinaEscribir(" Portfolio Jesús Mares ", 220, maquina1);
 
-window.sr = ScrollReveal({ duration: 2000 });
+window.sr = ScrollReveal();
 
 sr.reveal(".scroll-portfolio-left", {
   duration: 3000,
