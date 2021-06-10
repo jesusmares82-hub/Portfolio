@@ -109,6 +109,27 @@ hr {
   margin: 10px 0;
 }
 
+#saludo {
+  animation-name: rotate;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: bezier;
+}
+
+.caja_inline {
+  display: inline-block;
+  width: 25px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
 /*
 ======================== Contact =============================
 */
