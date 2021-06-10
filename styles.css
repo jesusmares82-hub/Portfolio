@@ -84,6 +84,25 @@ hr {
   width: 100%;
   position: absolute;
 }
+.text-slider-items {
+  display: block;
+}
+
+.heading {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.heading h1 {
+  color: limegreen;
+  font-size: 70px;
+}
+
+.heading h3 {
+  color: rgb(253, 243, 243);
+  font-size: 20px;
+}
+
 /*
 ================= Profile Picture =================
 */
@@ -291,4 +310,7 @@ hr {
 }
 .margin-left {
   margin-left: 10px;
+}
+.margin-bottom {
+  margin-bottom: 10px;
 }
