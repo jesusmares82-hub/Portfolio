@@ -21,3 +21,18 @@ const maquinaEscribir = (text, tiempo = 10, etiqueta = "") => {
 };
 
 maquinaEscribir(" Portfolio Jesús Mares ", 220, maquina1);
+
+window.sr = ScrollReveal({ duration: 2000 });
+
+sr.reveal(".scroll-portfolio-left", {
+  duration: 3000,
+  origin: "left",
+  distance: "400px",
+  mobile: true,
+});
+sr.reveal(".scroll-portfolio-right", {
+  duration: 3000,
+  origin: "right",
+  distance: "400px",
+  mobile: true,
+});

@@ -17,6 +17,8 @@
     <!--   Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="grid.css" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="arrow">
@@ -77,7 +79,7 @@
             <div class="margin-auto">
               <h3 class="text-center"><span>About</span> me</h3>
               <p>
-                <div class="caja_inline" id="saludo">👋</div> Hi, My name is Jesús Mares.  I'm a
+                <div class="caja_inline headline" id="saludo">👋</div> Hi, My name is Jesús Mares.  I'm a
                 Front End Engineer based in Mexico City ☀️. I describe myself as
                 a passionate developer who loves coding, open source, and the
                 web platform ❤️.. My Portfolio is powered by VS Code and coffee
@@ -124,7 +126,7 @@
       <section id="portfolio">
         <div class="container">
           <h2 class="margin-left">Port<span>folio</span></h2>
-          <div class="row">
+          <div class="row scroll-portfolio-left">
             <div class="col-md-4">
               <img src="./img/work.jpeg" alt="First work" />
             </div>
@@ -138,7 +140,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row scroll-portfolio-right">
             <div class="col-md-4">
               <img src="./img/work2.jpg" alt="Second work" />
             </div>
@@ -152,7 +154,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row scroll-portfolio-left">
             <div class="col-md-4">
               <img src="./img/work3.jpeg" alt="Third work" />
             </div>
@@ -166,7 +168,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row scroll-portfolio-right">
             <div class="col-md-4">
               <img src="./img/work4.jpeg" alt="Fourth work" />
             </div>
@@ -241,6 +243,7 @@
       </footer>
       <!-- End Footer Section -->
     </div>
+     
      <script src="https://developers.google.com/speed/libraries/devguide#jquery"></script>
     <script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
