@@ -10,6 +10,9 @@ body {
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
 }
+h1 {
+  font-size: 28px;
+}
 a {
   color: black;
   text-decoration: none;
@@ -47,7 +50,6 @@ span {
   margin-bottom: 60px;
   display: flex;
   justify-content: space-around;
-  /* margin: auto; */
   position: fixed;
   top: 0;
   z-index: 999;
@@ -66,7 +68,6 @@ span {
 }
 .nav-main ul li {
   padding: 10px;
-  /*font-size: 20px;*/
   transition: all 0.5s ease;
 }
 .nav-main ul li a:hover {
