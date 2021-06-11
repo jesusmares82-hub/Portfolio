@@ -11,7 +11,7 @@ let maquina1 = document.getElementById("master-text");
 
 const maquinaEscribir = (text, tiempo = 10, etiqueta = "") => {
   let arrayCaracteres = text.split("");
-  etiqueta.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;";
+  etiqueta.innerHTML = "&nbsp;";
   let j = 0;
   let escribir = setInterval(function () {
     if (arrayCaracteres[j] === "*") {
@@ -22,14 +22,14 @@ const maquinaEscribir = (text, tiempo = 10, etiqueta = "") => {
       etiqueta.innerHTML += `<span>${arrayCaracteres[j]}</span>`;
     }
     if (j === arrayCaracteres.length) {
-      etiqueta.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+      etiqueta.innerHTML = "&nbsp;";
       j = 0;
     }
     j++;
   }, tiempo);
 };
 
-maquinaEscribir(" Portfolio Jesús Mares ", 200, maquina1);
+maquinaEscribir(" Portfolio Jesús Mares", 200, maquina1);
 /* --------------- Scroll reveal effect ------------------ */
 window.sr = ScrollReveal();
 
