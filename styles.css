@@ -41,9 +41,25 @@ span {
   height: 80px;
   padding: 20px 0;
 }
+.nav-main.active {
+  background-color: #fdfdfd;
+  width: 90%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+  /* margin: auto; */
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.nav-main.active .nav-brand,
+.nav-main.active .nav-main ul li {
+  background-color: #ffffff;
+}
 .nav-brand {
   min-width: 50px;
 }
+
 /* Nav Left */
 .nav-main ul {
   display: flex;
@@ -51,12 +67,13 @@ span {
 .nav-main ul li {
   padding: 10px;
   /*font-size: 20px;*/
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 .nav-main ul li a:hover {
-  font-size: 25px;
+  font-size: 18px;
   transition: all 0.5s;
 }
+
 hr {
   margin: 20px 0;
 }

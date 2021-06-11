@@ -1,8 +1,17 @@
+/* --------------- Nav Bar Sticky ------------------ */
+
+const nav = document.querySelector(".nav-main");
+
+window.addEventListener("scroll", function () {
+  nav.classList.toggle("active", window.scrollY > 0);
+});
+
+/* --------------- Typped Effect ------------------ */
 let maquina1 = document.getElementById("master-text");
 
 const maquinaEscribir = (text, tiempo = 10, etiqueta = "") => {
   let arrayCaracteres = text.split("");
-  etiqueta.innerHTML = "";
+  etiqueta.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;";
   let j = 0;
   let escribir = setInterval(function () {
     if (arrayCaracteres[j] === "*") {
@@ -13,15 +22,15 @@ const maquinaEscribir = (text, tiempo = 10, etiqueta = "") => {
       etiqueta.innerHTML += `<span>${arrayCaracteres[j]}</span>`;
     }
     if (j === arrayCaracteres.length) {
-      etiqueta.innerHTML = "";
+      etiqueta.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
       j = 0;
     }
     j++;
   }, tiempo);
 };
 
-maquinaEscribir(" Portfolio Jesús Mares ", 220, maquina1);
-
+maquinaEscribir(" Portfolio Jesús Mares ", 200, maquina1);
+/* --------------- Scroll reveal effect ------------------ */
 window.sr = ScrollReveal();
 
 sr.reveal(".scroll-portfolio-left", {
