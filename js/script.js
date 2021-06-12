@@ -36,13 +36,13 @@ window.sr = ScrollReveal();
 sr.reveal(".scroll-portfolio-left", {
   duration: 3000,
   origin: "left",
-  distance: "400px",
+  distance: "40px",
   mobile: true,
 });
 sr.reveal(".scroll-portfolio-right", {
   duration: 3000,
   origin: "right",
-  distance: "400px",
+  distance: "40px",
   mobile: true,
 });
 
