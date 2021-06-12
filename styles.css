@@ -3,9 +3,17 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --terciary-color: rgb(46, 46, 46);
+  --cuartery-color: rgb(46, 46, 46);
+  --quintery-color: transparent;
+  --sixtery-color: #0000002c;
+}
 body {
-  color: black;
-  background-color: #fdfdfd;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b5afbd' fill-opacity='0.14'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
@@ -14,13 +22,14 @@ h1 {
   font-size: 28px;
 }
 a {
-  color: black;
+  color: var(--primary-color);
   text-decoration: none;
 }
 ul {
   list-style: none;
 }
 img {
+  color: var(--primary-color);
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -45,7 +54,7 @@ span {
   padding: 20px 0;
 }
 .nav-main.active {
-  background-color: #fdfdfd;
+  background-color: var(--secondary-color);
   width: 90%;
   margin-bottom: 60px;
   display: flex;
@@ -56,7 +65,7 @@ span {
 }
 .nav-main.active .nav-brand,
 .nav-main.active .nav-main ul li {
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
 }
 .nav-brand {
   min-width: 50px;
@@ -96,7 +105,7 @@ hr {
   position: relative;
 }
 .overlay {
-  background-color: black;
+  background-color: var(--primary-color);
   opacity: 0.7;
   height: 550px;
   width: 100%;
@@ -181,16 +190,17 @@ hr {
 .contact-item {
   width: 70%;
   padding: 20px;
+  background-color: var(--quintery-color);
   text-align: center;
   border-radius: 10px;
   padding: 30px;
   margin: 10px auto;
   flex-direction: column;
-  box-shadow: 0px 0px 7px 0 #0000002c;
+  box-shadow: 0px 0px 7px 0 var(--sixtery-color);
   transition: 0.3s ease box-shadow;
 }
 .contact-item:hover {
-  box-shadow: 0px 0px 18px 0 #0000002c;
+  box-shadow: 0px 0px 18px 0 var(--sixtery-color);
 }
 .icon {
   width: 30px;
@@ -250,8 +260,8 @@ hr {
   border-radius: 15px;
 }
 .primary-tag {
-  background: rgb(46, 46, 46);
-  color: white;
+  background: var(--cuartery-color);
+  color: var(--secondary-color);
 }
 /* Button component*/
 .btn {
@@ -260,10 +270,10 @@ hr {
   border: 0;
   font-weight: bold;
   padding: 10px;
-  background: rgb(46, 46, 46);
-  color: white;
+  background: var(--terciary-color);
+  color: var(--secondary-color);
   font-size: 15px;
-  border: 1px solid white;
+  border: 1px solid var(--secondary-color);
   border-radius: 6px;
   margin: 10px 0px;
   transform: scale(1);
@@ -314,7 +324,7 @@ hr {
   margin-bottom: 10px;
 }
 .text-color-white {
-  color: white;
+  color: var(--secondary-color);
 }
 .p-relative {
   position: relative;
@@ -331,4 +341,34 @@ hr {
 }
 .margin-bottom {
   margin-bottom: 10px;
+}
+/*
+======================== Dark Mode =============================
+*/
+.container-button {
+  position: fixed;
+  top: 150px;
+  right: 30px;
+  height: 39px;
+  width: 37px;
+  text-align: center;
+  background: rgba(158, 158, 158, 0.6);
+  display: block;
+  border-radius: 6px;
+  z-index: 9;
+}
+
+.container-button span {
+  color: #f2f2f2;
+  font-size: 25px;
+  line-height: 39px;
+  cursor: pointer;
+}
+.dark-theme {
+  --secondary-color: black;
+  --primary-color: white;
+  --terciary-color: rgb(211, 211, 211);
+  --cuartery-color: rgb(176, 176, 176);
+  --quintery-color: rgb(77, 72, 72);
+  --sixtery-color: #fcfafa2c;
 }

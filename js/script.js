@@ -45,3 +45,11 @@ sr.reveal(".scroll-portfolio-right", {
   distance: "400px",
   mobile: true,
 });
+
+/* --------------- Scroll reveal effect ------------------ */
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+};
