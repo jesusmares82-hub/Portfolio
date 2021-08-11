@@ -376,7 +376,8 @@ hr {
 .container-count {
   position: absolute;
   top: 350px;
-  left: 80px;
+  /*left: 80px;*/
+  left: 20%;
   height: calc(60vh + 5px);
   width: calc(60vw + 5px);
   text-align: center;

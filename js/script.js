@@ -2,18 +2,21 @@
 
 const loadText = document.getElementById("loading-text");
 const bg = document.querySelector(".main-section");
+const btn = document.querySelector(".btn");
 
 let load = 0;
-let int = setInterval(blurring, 4i0);
+let int = setInterval(blurring, 40);
 
 function blurring() {
   load = load + 1;
   if (load > 99) {
     clearInterval(int);
+    bg.style.zIndex = "99";
   }
   loadText.innerText = `${load}%`;
   loadText.style.opacity = scale(load, 0, 100, 1, 0);
   bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
+  //bg.style.zIndex = "99";
 }
 
 const scale = (num, in_min, in_max, out_min, out_max) => {
