@@ -4,7 +4,7 @@ const loadText = document.getElementById("loading-text");
 const bg = document.querySelector(".main-section");
 
 let load = 0;
-let int = setInterval(blurring, 40);
+let int = setInterval(blurring, 4i0);
 
 function blurring() {
   load = load + 1;
