@@ -306,7 +306,7 @@ hr {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 9;
+  z-index: 999;
 }
 .arrow a {
   height: 39px;
@@ -370,7 +370,7 @@ hr {
   background: rgba(158, 158, 158, 0.6);
   display: block;
   border-radius: 6px;
-  z-index: 9;
+  z-index: 9999;
 }
 
 .container-count {
